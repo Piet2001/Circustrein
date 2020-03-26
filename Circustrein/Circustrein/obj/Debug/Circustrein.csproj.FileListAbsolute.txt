@@ -1,0 +1,7 @@
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-database-site\Circustrein\Circustrein\obj\Debug\Circustrein.csprojAssemblyReference.cache
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-database-site\Circustrein\Circustrein\obj\Debug\Circustrein.csproj.CoreCompileInputs.cache
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-database-site\Circustrein\Circustrein\bin\Debug\Circustrein.exe.config
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-database-site\Circustrein\Circustrein\bin\Debug\Circustrein.exe
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-database-site\Circustrein\Circustrein\bin\Debug\Circustrein.pdb
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-database-site\Circustrein\Circustrein\obj\Debug\Circustrein.exe
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-database-site\Circustrein\Circustrein\obj\Debug\Circustrein.pdb
