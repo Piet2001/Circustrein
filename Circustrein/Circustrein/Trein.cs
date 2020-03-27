@@ -26,12 +26,12 @@ namespace Circustrein
             foreach (Dier Vleeseter in Vleeseters)
             {
                 Wagon wagon = new Wagon();
-                wagon.Dieren.Add(Vleeseter);
+                wagon.DierenInWagon.Add(Vleeseter);
                 for (int i = planteneters.Count - 1; i >= 0; i--)
                 {
                     if (wagon.IsMogelijk(planteneters[i]))
                     {
-                        wagon.Dieren.Add(planteneters[i]);
+                        wagon.DierenInWagon.Add(planteneters[i]);
                         planteneters.RemoveAt(i);
                     }
                 }
@@ -50,7 +50,7 @@ namespace Circustrein
             {
                 if (wagon.IsMogelijk(dier))
                 {
-                    wagon.Dieren.Add(dier);
+                    wagon.DierenInWagon.Add(dier);
                     return;
                 }
             }

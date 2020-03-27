@@ -10,18 +10,18 @@ namespace Circustrein
     {
         private const int MaxPunten = 10;
 
-        public List<Dier> Dieren { get; private set; }
+        public List<Dier> DierenInWagon { get; private set; }
 
-        private int GebruiktePunten => this.Dieren.Sum(totaal => (int)totaal.Grote);
+        private int GebruiktePunten => DierenInWagon.Sum(totaal => (int)totaal.Grote);
 
         public Wagon()
         {
-            Dieren = new List<Dier>();
+            DierenInWagon = new List<Dier>();
         }
 
         public Wagon(Dier eersteDier)
         {
-            Dieren = new List<Dier>
+            DierenInWagon = new List<Dier>
             {
                 eersteDier
             };
@@ -35,7 +35,7 @@ namespace Circustrein
                 return false;
 
             //Will the animal get eaten?
-            IEnumerable<Dier> vleesetersInWagon = Dieren.Where(dieren => dieren.Eten == Eten.Vlees);
+            IEnumerable<Dier> vleesetersInWagon = DierenInWagon.Where(dieren => dieren.Eten == Eten.Vlees);
             if (vleesetersInWagon.Any(vleeseter => dier.Grote <= vleeseter.Grote))
                 return false;
 
@@ -45,12 +45,12 @@ namespace Circustrein
         public string WagonUitslag()
         {
             string uitslag = string.Empty;
-            foreach (Dier dier in Dieren)
+            foreach (Dier dier in DierenInWagon)
             {
                 uitslag += dier.Naam + ", ";
             }
             int puntenover = MaxPunten - GebruiktePunten;
-            return "\n   Aantal dieren: " + Dieren.Count.ToString() + " \n   Dieren in wagon: " + uitslag + "\n   Gebruikte punten: " + GebruiktePunten + "\n   Restpunten: " + puntenover;
+            return "\n   Aantal dieren: " + Convert.ToString(DierenInWagon.Count) + " \n   Dieren in wagon: " + uitslag + "\n   Gebruikte punten: " + Convert.ToString(GebruiktePunten) + "\n   Restpunten: " + Convert.ToString(puntenover);
         }
     }
 }
