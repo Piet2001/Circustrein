@@ -30,16 +30,34 @@ namespace Circustrein
 
         public bool IsMogelijk(Dier dier)
         {
-            //Does the animal fit in the Wagon?
-            if ((int)dier.Grote > MaxPunten - GebruiktePunten)
+            if (DierKleinGenoeg(dier) == false || DierGroterDanVleeseter(dier) == false)
+            {
                 return false;
+            }
+            return true;
+        }
 
-            //Will the animal get eaten?
+
+        private bool DierGroterDanVleeseter(Dier dier)
+        {
             IEnumerable<Dier> vleesetersInWagon = DierenInWagon.Where(dieren => dieren.Eten == Eten.Vlees);
             if (vleesetersInWagon.Any(vleeseter => dier.Grote <= vleeseter.Grote))
+            {
                 return false;
-
+            }
             return true;
+        }
+
+        private bool DierKleinGenoeg(Dier dier)
+        {
+            if ((int)dier.Grote > MaxPunten - GebruiktePunten)
+            {
+                return false;
+            }
+            return true;
+
+
+
         }
 
         public string WagonUitslag()

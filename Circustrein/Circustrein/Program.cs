@@ -12,23 +12,23 @@ namespace Circustrein
         {
             List<Dier> dieren = new List<Dier>
             {
-                new Dier("Hond", Grote.Middel, Eten.Vlees),
-                new Dier("Konijn", Grote.Klein, Eten.Planten),
-                new Dier("Olifant",Grote.Groot, Eten.Planten),
-                new Dier("Mier", Grote.Klein, Eten.Vlees),
-                new Dier("Leeuw", Grote.Middel, Eten.Vlees),
-                new Dier("Eend", Grote.Klein, Eten.Planten),
-                new Dier("Cavia", Grote.Klein, Eten.Planten),
-                new Dier("Paard", Grote.Middel, Eten.Planten),
-                new Dier("Giraffe", Grote.Groot, Eten.Planten),
-                new Dier("Ezel", Grote.Middel, Eten.Planten),
-                new Dier("Hert", Grote.Middel, Eten.Planten),
-                new Dier("Kat", Grote.Klein, Eten.Vlees),
-                new Dier("Hamster", Grote.Klein, Eten.Planten),
-                new Dier("Tijger", Grote.Middel, Eten.Vlees),
-                new Dier("Uil", Grote.Middel, Eten.Vlees),
-                new Dier("Nijlpaard", Grote.Groot, Eten.Planten),
-                new Dier("krokodil", Grote.Groot, Eten.Vlees)
+                new Dier("Hond", Grootte.Middel, Eten.Vlees),
+                new Dier("Konijn", Grootte.Klein, Eten.Planten),
+                new Dier("Olifant",Grootte.Groot, Eten.Planten),
+                new Dier("Mier", Grootte.Klein, Eten.Vlees),
+                new Dier("Leeuw", Grootte.Middel, Eten.Vlees),
+                new Dier("Eend", Grootte.Klein, Eten.Planten),
+                new Dier("Cavia", Grootte.Klein, Eten.Planten),
+                new Dier("Paard", Grootte.Middel, Eten.Planten),
+                new Dier("Giraffe", Grootte.Groot, Eten.Planten),
+                new Dier("Ezel", Grootte.Middel, Eten.Planten),
+                new Dier("Hert", Grootte.Middel, Eten.Planten),
+                new Dier("Kat", Grootte.Klein, Eten.Vlees),
+                new Dier("Hamster", Grootte.Klein, Eten.Planten),
+                new Dier("Tijger", Grootte.Middel, Eten.Vlees),
+                new Dier("Uil", Grootte.Middel, Eten.Vlees),
+                new Dier("Nijlpaard", Grootte.Groot, Eten.Planten),
+                new Dier("krokodil", Grootte.Groot, Eten.Vlees)
             };
             
             Trein trein = new Trein();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Circustrein
 {
-    public enum Grote
+    public enum Grootte
     {
         Klein = 1,
         Middel = 3,
