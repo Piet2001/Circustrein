@@ -15,42 +15,39 @@ namespace Circustrein
             Wagons = new List<Wagon>();
         }
 
-        private void DierToevoegen(Dier dier)
+        public void DierenToevoegen(IEnumerable<Dier> dieren)
+        {
+            var dierengesorteerd = dieren.OrderBy(dier => dier.Eten).ThenByDescending(dier => dier.Grootte);
+            foreach (Dier dier in dierengesorteerd)
+            {
+                if (dier.Eten == Eten.Vlees)
+                {
+                    VleeseterToevoegen(dier);
+                }
+                else if (dier.Eten == Eten.Planten)
+                {
+                    PlanteneterToevoegen(dier);
+                }
+            }
+        }
+
+        private void VleeseterToevoegen(Dier dier)
+        {
+            Wagon wagon = new Wagon(dier);
+            Wagons.Add(wagon);
+        }
+
+        private void PlanteneterToevoegen(Dier dier)
         {
             foreach (Wagon wagon in Wagons)
             {
                 if (wagon.IsMogelijk(dier))
                 {
-                    wagon.DierenInWagon.Add(dier);
+                    wagon.DierToevoegen(dier);
                     return;
                 }
             }
             Wagons.Add(new Wagon(dier));
-        }
-
-        public void DierenToevoegen(IEnumerable<Dier> dieren)
-        {
-            IEnumerable<Dier> vleeseters = dieren.Where(dier => dier.Eten == Eten.Vlees);
-            List<Dier> planteneters = dieren.Where(dier => dier.Eten == Eten.Planten).OrderBy(dier => dier.Grote).ToList();
-            foreach (Dier Vleeseter in vleeseters)
-            {
-                Wagon wagon = new Wagon();
-                wagon.DierenInWagon.Add(Vleeseter);
-                for (int i = planteneters.Count - 1; i >= 0; i--)
-                {
-                    if (wagon.IsMogelijk(planteneters[i]))
-                    {
-                        wagon.DierenInWagon.Add(planteneters[i]);
-                        planteneters.RemoveAt(i);
-                    }
-                }
-                this.Wagons.Add(wagon);
-            }
-
-            foreach (Dier planeteneter in planteneters)
-            {
-                DierToevoegen(planeteneter);
-            }
         }
 
         public string TreinUitslag()

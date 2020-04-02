@@ -10,9 +10,9 @@ namespace Circustrein
     {
         private const int MaxPunten = 10;
 
-        public List<Dier> DierenInWagon { get; private set; }
+        private List<Dier> DierenInWagon;
 
-        private int GebruiktePunten => DierenInWagon.Sum(totaal => (int)totaal.Grote);
+        private int GebruiktePunten => DierenInWagon.Sum(totaal => (int)totaal.Grootte);
 
         public Wagon()
         {
@@ -41,7 +41,7 @@ namespace Circustrein
         private bool DierGroterDanVleeseter(Dier dier)
         {
             IEnumerable<Dier> vleesetersInWagon = DierenInWagon.Where(dieren => dieren.Eten == Eten.Vlees);
-            if (vleesetersInWagon.Any(vleeseter => dier.Grote <= vleeseter.Grote))
+            if (vleesetersInWagon.Any(vleeseter => dier.Grootte <= vleeseter.Grootte))
             {
                 return false;
             }
@@ -50,14 +50,19 @@ namespace Circustrein
 
         private bool DierKleinGenoeg(Dier dier)
         {
-            if ((int)dier.Grote > MaxPunten - GebruiktePunten)
+            if ((int)dier.Grootte > MaxPunten - GebruiktePunten)
             {
                 return false;
             }
             return true;
+        }
 
-
-
+        public void DierToevoegen(Dier dier)
+        {
+            if(IsMogelijk(dier))
+            {
+                DierenInWagon.Add(dier);                
+            }
         }
 
         public string WagonUitslag()

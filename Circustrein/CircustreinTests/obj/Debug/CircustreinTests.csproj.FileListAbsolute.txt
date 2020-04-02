@@ -1,0 +1,17 @@
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\bin\Debug\CircustreinTests.dll
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\bin\Debug\CircustreinTests.pdb
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\bin\Debug\Circustrein.exe
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\bin\Debug\Circustrein.pdb
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\bin\Debug\Circustrein.exe.config
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\obj\Debug\CircustreinTests.csprojAssemblyReference.cache
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\obj\Debug\CircustreinTests.csproj.CoreCompileInputs.cache
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\obj\Debug\CircustreinTests.csproj.CopyComplete
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\obj\Debug\CircustreinTests.dll
+D:\OneDrive - Office 365 Fontys\Fontys FHICT\S2\Git\s2-circustrein\Circustrein\CircustreinTests\obj\Debug\CircustreinTests.pdb
