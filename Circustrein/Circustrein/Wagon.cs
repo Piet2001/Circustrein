@@ -40,8 +40,8 @@ namespace Circustrein
 
         private bool DierGroterDanVleeseter(Dier dier)
         {
-            IEnumerable<Dier> vleesetersInWagon = DierenInWagon.Where(dieren => dieren.Eten == Eten.Vlees);
-            if (vleesetersInWagon.Any(vleeseter => dier.Grootte <= vleeseter.Grootte))
+            IEnumerable<Dier> vleeseterInWagon = DierenInWagon.Where(dieren => dieren.Eten == Eten.Vlees);
+            if (vleeseterInWagon.Any(vleeseter => dier.Grootte <= vleeseter.Grootte))
             {
                 return false;
             }
