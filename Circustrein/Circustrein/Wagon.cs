@@ -65,6 +65,11 @@ namespace Circustrein
             }
         }
 
+        public int GetRestPunten()
+        {
+            return MaxPunten - GebruiktePunten;
+        }
+
         public string WagonUitslag()
         {
             string uitslag = string.Empty;
