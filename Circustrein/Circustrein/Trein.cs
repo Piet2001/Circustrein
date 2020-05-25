@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Circustrein
 {
-    class Trein
+    public class Trein
     {
         private List<Wagon> Wagons;
 
@@ -48,6 +48,11 @@ namespace Circustrein
                 }
             }
             Wagons.Add(new Wagon(dier));
+        }
+
+        public int GetWagonCount()
+        {
+            return Wagons.Count;
         }
 
         public string TreinUitslag()

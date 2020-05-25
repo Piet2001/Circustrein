@@ -61,5 +61,18 @@ namespace Circustrein.Tests
 
             Assert.IsFalse(_wagon.IsMogelijk(plantenEter3));
         }
+
+        [TestMethod]
+        public void twee_keer_groot_mogelijk()
+        {
+            Dier plantenEter1 = new Dier("PlatenEter", Grootte.Groot, Eten.Planten);
+            Dier plantenEter2 = new Dier("PlatenEter", Grootte.Groot, Eten.Planten);
+            
+            _wagon.DierToevoegen(plantenEter1);
+            _wagon.DierToevoegen(plantenEter2);
+
+            Assert.AreEqual(_wagon.GetRestPunten(),0);
+        }
+
     }
 }
